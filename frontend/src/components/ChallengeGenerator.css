@@ -1,0 +1,68 @@
+.challenge-generator {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.challenge-output {
+  margin-top: 160px;
+  background-color: #f1f2f6;
+  color:black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.challenge-output h3 {
+  color:black;
+  margin-bottom: 10px;
+}
+
+.challenge-output pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.secondary {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.secondary:hover {
+  background-color: #7f8c8d;
+}
+

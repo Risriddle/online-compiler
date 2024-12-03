@@ -1,0 +1,73 @@
+
+   .code-share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+
+  .code-share textarea {
+    width: 45%;
+    height: 300px;
+    margin-bottom: 1rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .shared-url {
+    margin-top: 20px;
+    color:blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .shared-url input{
+    color:blue;
+    font-size: 16px;
+  }
+  .url-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .copy-confirmation {
+    font-size: 20px;
+    color: green;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.secondary {
+    background-color: #95a5a6;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+   
+
+
+
+
+
