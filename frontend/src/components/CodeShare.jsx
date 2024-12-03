@@ -86,7 +86,7 @@ export default function CodeShare() {
 
   const fetchSharedCode = async (shareId) => {
     try {
-      const response = await axios.get(`http://localhost:3000/share/${shareId}`);
+      const response = await axios.get(`online-compiler-gquu9orzr-risriddles-projects.vercel.app/share/${shareId}`);
       setCode(response.data.code);
     } catch (error) {
       console.error('Error fetching shared code:', error);
@@ -95,7 +95,7 @@ export default function CodeShare() {
 
   const handleShare = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/share', { code });
+      const response = await axios.post('online-compiler-gquu9orzr-risriddles-projects.vercel.app/share', { code });
       setSharedUrl(`${window.location.origin}/share/${response.data.id}`);
     } catch (error) {
       console.error('Error sharing code:', error);

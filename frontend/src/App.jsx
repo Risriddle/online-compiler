@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:3000/snippets');
+      const response = await fetch('online-compiler-gquu9orzr-risriddles-projects.vercel.app/snippets');
       const data = await response.json();
       setSnippets(data);
       // Simulate a loading delay

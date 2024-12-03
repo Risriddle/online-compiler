@@ -205,7 +205,7 @@ function ChallengeGenerator() {
     setSelectedTopic(topic);
     try {
       // console.log(topic,"-------------------------")
-      const response = await axios.post('http://localhost:3000/generate-challenge',{topic:selectedTopic});
+      const response = await axios.post('online-compiler-gquu9orzr-risriddles-projects.vercel.app/generate-challenge',{topic:selectedTopic});
       setChallenge(response.data.challenge);
     } catch (error) {
       console.error('Error generating challenge:', error);
