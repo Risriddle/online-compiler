@@ -197,7 +197,7 @@ function CodeEditor() {
 
   const fetchSnippets = async () => {
     try {
-      const response = await axios.get('online-compiler-gquu9orzr-risriddles-projects.vercel.app/snippets');
+      const response = await axios.get('https://online-compiler-backend-vjkg.onrender.com/snippets');
       setSnippets(response.data);
     } catch (error) {
       console.error('Error fetching snippets:', error);
@@ -207,7 +207,7 @@ function CodeEditor() {
   const compileCode = async () => {
     setLoading(true);
     try {
-      const response = await axios.post('online-compiler-gquu9orzr-risriddles-projects.vercel.app/compile', { code, language, input });
+      const response = await axios.post('https://online-compiler-backend-vjkg.onrender.com/compile', { code, language, input });
       setOutput(response.data.output);
     } catch (error) {
       setOutput('Error compiling code');
