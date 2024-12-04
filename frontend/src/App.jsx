@@ -13,10 +13,13 @@ import LoadingSpinner from './components/LoadingSpinner';
 function App() {
   const [snippets, setSnippets] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('https://online-compiler-backend-vjkg.onrender.com/snippets');
+      const response = await fetch('https://online-compiler-backend-vjkg.onrender.com/snippets',{ method: 'GET', 
+        headers: {
+            'Content-Type': 'application/json', // Ensure this matches backend allowed headers
+        },});
       const data = await response.json();
       setSnippets(data);
       // Simulate a loading delay
