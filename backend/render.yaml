@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: backend
+    env: ubuntu
+    build:
+      commands:
+        - chmod +x render-build.sh  # Ensure the script is executable
+        - ./render-build.sh         # Run your setup script
+    start: 
+      command: node server.js
